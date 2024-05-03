@@ -78,6 +78,7 @@ for _, professor in tabela_nome.iterrows():
         msg = MIMEMultipart()
         msg['From'] = sender_email
         msg['To'] =  email
+        msg['Cc'] = 'COORDENACAOPEDADOGICAFATECCG@sesims.onmicrosoft.com'
         msg['Subject'] = 'Pendência de Lançamento SGE'
         
         mensagem = """
